@@ -19,7 +19,7 @@ describe('ExampleComponent', () => {
             methods: {}
         })
 
-        expect(wrapper.isVueInstance()).toBeTruthy()
+        expect(wrapper.find('.container').vm).toBeTruthy()
         expect(wrapper).toMatchSnapshot()
     })
 })
